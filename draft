@@ -1,0 +1,48 @@
+df=pd.read_csv('data/raw_data.csv')
+
+df.info()
+df.head()
+df.describe()
+df.isnull().sum()
+
+Features: 50000 entries * 12 features
+1) Numerical: avg_dist, avg_rating_by_driver, avg_rating_of_driver, avg_surge, 
+              weekday_pct, surge_pct, trips_in_first_30_days 
+2) Categorical: city, phone
+3) Boolean: luxury_car_user 
+4) Timestamp: last_trip_date, signup_date 
+
+EDA:
+1) Numerical variables
+   df[''].plot.hist(bins=)
+   scatter plot
+2) Categorical
+   df[''].value_counts()
+   df[''].value_counts(dropna=False).plot.bar()
+3) Boolean
+4) Timestamp
+
+Missing data features:
+1) avg_rating_by_driver
+2) avg_rating_of_driver  
+3) phone
+   (1) df_dropna=df.dropna(axis=0)
+   (2) df_fillna=df.copy()
+       df_fillna['phone']=df['phone'].fillna('no_phone')
+       df_fillna['']=df[''].fillna(df[''].median())
+       
+Transform data:
+1) Time-series variables
+2) Converting categorical variables, encode to numeric values
+3) Convert bool into int
+
+Define a label/target/outcome:
+1)
+2)
+
+EDA with label:
+
+
+Save cleaned data:
+
+
