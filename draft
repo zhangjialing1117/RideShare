@@ -15,12 +15,16 @@ Features: 50000 entries * 12 features
 EDA:
 1) Numerical variables
    df[''].plot.hist(bins=)
-   scatter plot
+   scatter plot: pandas.plotting -> scatter_matrix
 2) Categorical
    df[''].value_counts()
    df[''].value_counts(dropna=False).plot.bar()
 3) Boolean
-4) Timestamp
+4) Timestamp:
+   df['']=pd.to_datetime(df[''])
+   df_timestamp=df[['','']].copy
+   df_timestamp['count']=1
+   df_timestamp=df_timestamep.set_index('')
 
 Missing data features:
 1) avg_rating_by_driver
