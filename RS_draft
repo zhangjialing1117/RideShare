@@ -128,3 +128,8 @@ Save cleaned data:
                      'signup_dow_5', 'signup_dow_6', 'churn']
    cleaned_data_csv = 'data/cleaned_data.csv'
    df[selected_columns].to_csv(cleaned_data_csv, index=False)
+
+
+Build Model:
+   Train-Test Split
+   
